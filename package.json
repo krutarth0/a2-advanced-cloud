@@ -1,0 +1,15 @@
+{
+  "name": "a2",
+  "version": "1.0.0",
+  "description": "assignment 2 for advanced cloud",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "a2-advanced-cloud"
+  },
+  "author": "Krutarth Patel B00896235",
+  "license": "ISC"
+}
