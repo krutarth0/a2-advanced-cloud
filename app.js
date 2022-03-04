@@ -2,7 +2,7 @@ const express = require("express");
 fs = require("fs");
 
 const app = express();
-const port = 8000;
+const port = 80;
 
 app.use(express.json());
 
