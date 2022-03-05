@@ -20,7 +20,7 @@ app.get("/send", async (req, res) => {
     })
     .catch(function (error) {
       console.log(error);
-      res.json({ errlog: error });
+      res.json({ errmsg: error.message, detailedError: error });
     });
 });
 
