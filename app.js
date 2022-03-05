@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get("/send", async (req, res) => {
   axios
-    .post("3.88.132.229/begin", {
+    .post("http://3.88.132.229/begin", {
       banner: "B00896235",
       ip: "3.86.227.244",
     })
