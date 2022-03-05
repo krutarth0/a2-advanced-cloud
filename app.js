@@ -24,7 +24,7 @@ app.get("/send", async (req, res) => {
       // res.json({ _errmsg: error.message });
     });
 
-  data.then((r) => res.json({ score: r }));
+  data.then((r) => res.json({ score: r })).catch((e) => console.log(e));
 });
 
 app.post("/storedata", async (req, res) => {
