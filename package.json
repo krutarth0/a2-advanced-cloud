@@ -14,6 +14,8 @@
   "author": "Krutarth Patel B00896235",
   "license": "ISC",
   "dependencies": {
+    "aws-sdk": "^2.1087.0",
+    "axios": "^0.26.0",
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
   }
