@@ -16,11 +16,11 @@ app.get("/send", async (req, res) => {
     })
     .then((data) => {
       // console.log(data);
-      res.json({ log: data });
+      res.json({ _log: data });
     })
     .catch(function (error) {
       // console.log(error);
-      res.json({ errmsg: error.message, detailedError: error });
+      res.json({ _errmsg: error.message });
     });
 });
 
