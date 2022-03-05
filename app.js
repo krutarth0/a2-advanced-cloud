@@ -17,6 +17,10 @@ app.get("/send", async (req, res) => {
     .then((data) => {
       console.log(data);
       res.json({ log: data });
+    })
+    .catch(function (error) {
+      console.log(error);
+      res.json({ errlog: error });
     });
 });
 
