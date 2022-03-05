@@ -9,19 +9,21 @@ const port = 3000;
 app.use(express.json());
 
 app.get("/send", async (req, res) => {
-  await axios
+  var data = await axios
     .post("http://3.88.132.229/begin", {
       banner: "B00896235",
       ip: "3.86.227.244",
     })
     .then((data) => {
       console.log(data);
-      res.json({ _log: data });
+      // res.json({ score: data });
     })
     .catch(function (error) {
       console.log(error);
       // res.json({ _errmsg: error.message });
     });
+
+  res.json({ score: data });
 });
 
 app.post("/storedata", async (req, res) => {
