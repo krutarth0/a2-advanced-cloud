@@ -13,8 +13,8 @@ app.get("/send", async (req, res) => {
     banner: "B00896235",
     ip: "3.86.227.244",
   });
-
   console.log(inception);
+  res.json({ log: inception });
 });
 
 app.post("/storedata", async (req, res) => {
