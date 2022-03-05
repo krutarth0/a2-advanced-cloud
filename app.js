@@ -45,6 +45,7 @@ app.post("/storedata", async (req, res) => {
 });
 
 app.get("/", (req, res) => {
+  console.log("AT THE VERY BEGINING");
   res.json({ message: "suuupp dude, are you lost ?" });
 });
 
