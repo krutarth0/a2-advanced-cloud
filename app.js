@@ -9,12 +9,15 @@ const port = 3000;
 app.use(express.json());
 
 app.get("/send", async (req, res) => {
-  var inception = await axios.post("3.88.132.229/begin", {
-    banner: "B00896235",
-    ip: "3.86.227.244",
-  });
-  console.log(inception);
-  res.json({ log: inception });
+  axios
+    .post("3.88.132.229/begin", {
+      banner: "B00896235",
+      ip: "3.86.227.244",
+    })
+    .then((data) => {
+      console.log(data);
+      res.json({ log: data });
+    });
 });
 
 app.post("/storedata", async (req, res) => {
