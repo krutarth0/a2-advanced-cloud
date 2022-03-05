@@ -14,9 +14,9 @@ app.get("/send", async (req, res) => {
       banner: "B00896235",
       ip: "3.86.227.244",
     })
-    .then((data) => {
+    .then((response) => {
       console.log(data);
-      return data;
+      return response.data;
       // res.json({ score: data });
     })
     .catch(function (error) {
@@ -24,7 +24,7 @@ app.get("/send", async (req, res) => {
       // res.json({ _errmsg: error.message });
     });
 
-  res.json({ score: data });
+  data.then((r) => res.json({ score: r }));
 });
 
 app.post("/storedata", async (req, res) => {
