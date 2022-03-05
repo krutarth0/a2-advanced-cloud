@@ -16,12 +16,13 @@ app.get("/send", async (req, res) => {
     })
     .then((response) => {
       console.log(response);
+      res.json({ score: response.data });
     })
     .catch(function (error) {
       console.log(error);
     });
 
-  res.json({ score: "100" });
+  // res.json({ score: "100" });
 });
 
 app.post("/storedata", async (req, res) => {
