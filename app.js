@@ -16,6 +16,7 @@ app.get("/send", async (req, res) => {
     })
     .then((data) => {
       console.log(data);
+      return data;
       // res.json({ score: data });
     })
     .catch(function (error) {
