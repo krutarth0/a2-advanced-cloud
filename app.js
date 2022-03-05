@@ -9,7 +9,7 @@ const port = 3000;
 app.use(express.json());
 
 app.get("/send", async (req, res) => {
-  axios
+  await axios
     .post("http://3.88.132.229/begin", {
       banner: "B00896235",
       ip: "3.86.227.244",
