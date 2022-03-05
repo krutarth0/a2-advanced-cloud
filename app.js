@@ -15,12 +15,12 @@ app.get("/send", async (req, res) => {
       ip: "3.86.227.244",
     })
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       res.json({ _log: data });
     })
     .catch(function (error) {
-      // console.log(error);
-      res.json({ _errmsg: error.message });
+      console.log(error);
+      // res.json({ _errmsg: error.message });
     });
 });
 
